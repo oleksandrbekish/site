@@ -1,0 +1,70 @@
+ @media screen and (min-device-width:320px) {
+     
+ 
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fl);
+    grid-template-rows: repeat(4, 12em);
+}
+.wrapper > div {
+    margin: 3px;
+    border: 1px;
+    border-color: white;
+    
+    
+}
+#header {
+    background-color: rgb(71, 71, 216);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#right-box{
+    background-color: grey;
+    
+    float: right;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+#main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#td1{height: 100%; width: 100%;display: flex;}
+#left{height: 100%; width: 60%;}
+#td2{height: 50%; width: 100%;display: flex;}
+#left_td2{height: 100%; width: 50%; background-color: turquoise;}
+#right_td2{
+    height: 100%; 
+    width: 50%;
+    background-color: tomato ;
+    margin-left: 3px; 
+    border: 1px; 
+    border-color: white;}
+#down{height: 50%; 
+    width: 100%; 
+    background-color: teal; 
+    margin-top: 3px;
+    border: 1px;
+    border-color: white;}
+#right{height: 100%; 
+    width: 40%; 
+    background-color: yellow; 
+    margin-left: 3px;
+    border: 1px;
+    border-color: white;}
+#footer {
+    background-color: rgb(179, 105, 22);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+}
