@@ -1,0 +1,145 @@
+.header{
+    width: 100%;
+    height: 100px;
+}
+#menu, #logo {
+    width: 100%;
+    height: 50px;
+    
+}
+#menu{display: flex; }
+#logo{
+    background-color: black;
+    text-align: center;
+}
+#logo > p > img{
+    align-items: center;
+    height: 50px;
+    width: 150px;
+}
+#menu > ul{list-style: normal; margin: 0; padding: 15px;}
+#menu > ul > li{display: inline; margin-left: 35px; }
+.search{
+    margin-left: auto;
+    width: 400px;
+    height: 50px; 
+    display: flex; 
+    align-items: center;  
+}
+#search_img{height: 13px; width: 13px; margin-top: 20px;}
+#search_text{width: 200px; height: 25px; border: 0;}
+.film_comix{
+    background-color: rgb(221, 220, 220);
+    width: 100%;
+    height: 200px; 
+    display: flex;
+}
+.film_comix > div{
+
+    width: 600px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+.film_comix > div > img{width: 600px; height: 150px;filter: brightness(35%);}
+.text_dc{left: 25%;}
+.text_mar{left: 75%;}
+.text_dc, .text_mar {
+    position: absolute;
+    top: 25%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.main{width: 100%;height: 470px; display: flex;}
+.katalog{width: 60%;height: 470px;display: flex;}
+.film, .anime, .serial{
+    margin-top: 25px;
+    margin-left: 20px;
+    height: 450px;
+    width: 250px;
+}
+.photo_film, .photo_anime, .photo_serial{
+    height: 365px;
+    width: 250px;
+    border-width: 3px;
+    border: outset;
+    position: relative;
+}
+#ph_f, #ph_a, #ph_s{height: 365px;width: 250px;}
+.text_ph_f, .text_ph_a, .text_ph_s{height: 85px; ;width: 250px;line-height: 0cm;}
+h4{color: blue;}
+.text_ph_f > p, .text_ph_a > p, .text_ph_s > p{color: grey;}
+.start_f, .start_a, .start_s{
+    width: 50px; 
+    height: 50px; 
+    background-color: rgb(193, 209, 212); 
+    position: absolute; 
+    top: 40px;
+    opacity: 0.5;
+}
+#start_f_button,#start_a_button,#start_s_button{opacity: 0.5;}
+.button_f,.button_a,.button_s{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    border-radius: 0 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.button_footer_a,.button_footer_s{
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 345px;
+    background-color: rgb(187, 201, 204);
+    border-radius: 0 10px 0 0;
+    text-align: center; 
+    opacity: 0.5; 
+}
+.button_f{background-color: rgb(42, 200, 228);}
+.button_a{background-color: grey;}
+.button_s{background-color: tomato;}
+.button_f > img, .button_a > img,.button_s > img{width: 24px;height: 24px;}
+
+.right_katalog{width: 40%;height: 470px;}
+details{margin-top: 15px;margin-left: 5px;margin-right: 5px;}
+details > summary {
+    padding: 5px;
+    background-color: #eee;
+    color: #333;
+    border: 1px #ccc solid;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+}
+details > .text-katalog {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+details[open] > summary {
+    color:#eee; 
+    background-color:#333;
+}
+details[open] > summary > .svernut{opacity: 1;}
+.svernut{margin-left: auto; margin-right: 10px;opacity: 0;}
+.text-katalog > div{
+    height: 30px;
+    align-items: center;
+    display: flex;
+}
+.td1-2, .td2-2,.td3-2,.td4-2,.td5-2,.td6-2,.td7-2,.td8-2{text-align: right;margin-left: auto;margin-top: 2px;}
+.td1-2 > p,.td3-2 > p,.td4-2 > p,.td5-2 > p,.td6-2 > p,.td7-2 > p,.td8-2 > p{line-height: 0cm;color: grey;}
+
+
+a{
+    text-decoration: none;
+}
+.text-katalog > div > div > a, #menu > ul > li > a{
+    color: black;
+}
+.film_comix > div > div >a{color: white} 
